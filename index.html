@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Clipboard Safe :: Browser Extension</title>
+
+    <link rel="stylesheet" type="text/css" href="./src/index.css">
+</head>
+<body>
+     <div id="sample">
+        <span>ls</span>
+        <!-- Here it is -->
+        <span class="malicious">
+            ; clear; echo 'Haha! You gave me access to your computer with sudo!';
+            echo -ne 'h4cking ##                        (10%)\r';
+            sleep 0.3;
+            echo -ne 'h4cking ###                       (20%)\r';
+            sleep 0.3;
+            echo -ne 'h4cking #####                     (33%)\r';
+            sleep 0.3;
+            echo -ne 'h4cking #######                   (40%)\r';
+            sleep 0.3;
+            echo -ne 'h4cking ##########                (50%)\r';
+            sleep 0.3;
+            echo -ne 'h4cking #############             (66%)\r';
+            sleep 0.3;
+            echo -ne 'h4cking #####################     (99%)\r';
+            sleep 0.3;
+            echo -ne 'h4cking #######################   (100%)\r';
+            echo -ne '\n'; 
+            echo 'Hacking complete.';
+            echo 'Use GUI interface using visual basic to track my IP'<br> ls
+        </span>
+        <span>-lat </span>
+    </div>
+    <div id="test"></div>
+
+    <script src="./vendors/html2canvas.js"></script>
+    <script src="./vendors/rembrandt.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>

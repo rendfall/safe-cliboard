@@ -1,2 +1,3 @@
-# safe-cliboard
-Browser Extension to prevent injection malicious code by copy-paste
+# safe-clipboard
+
+> Browser Extension to prevent injection malicious code by copy-paste
